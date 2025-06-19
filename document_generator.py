@@ -100,7 +100,7 @@ class DocumentGenerator:
         print(f"Creating slides from {len(scene_changes)} scene changes...")
         
         # Define time limit per slide (in seconds) to control text length
-        time_limit_per_slide = 120.0  # 2 minutes per slide
+        time_limit_per_slide = 300.0  # 5 minutes per slide (increased from 2 minutes)
         
         for i, change in enumerate(scene_changes):
             # Determine the time range for this scene change

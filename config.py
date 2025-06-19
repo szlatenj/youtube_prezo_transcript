@@ -11,9 +11,9 @@ class Config:
     """Configuration class for the YouTube presentation extractor."""
     
     # Scene detection settings
-    scene_change_threshold: float = 0.3  # SSIM threshold for scene changes
-    min_time_between_captures: float = 2.0  # Minimum seconds between screenshots
-    histogram_threshold: float = 0.15  # Histogram comparison threshold
+    scene_change_threshold: float = 0.5  # SSIM threshold for scene changes
+    min_time_between_captures: float = 5.0  # Minimum seconds between screenshots
+    histogram_threshold: float = 0.25  # Histogram comparison threshold
     
     # Video processing settings
     target_resolution: Optional[tuple] = None  # (width, height) or None for original

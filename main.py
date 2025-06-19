@@ -335,8 +335,8 @@ def main():
             sys.exit(1)
         
         # Filter and merge scene changes
-        scene_changes = scene_detector.filter_changes_by_confidence(scene_changes, min_confidence=0.3)
-        scene_changes = scene_detector.merge_nearby_changes(scene_changes, time_threshold=1.0)
+        scene_changes = scene_detector.filter_changes_by_confidence(scene_changes, min_confidence=0.5)
+        scene_changes = scene_detector.merge_nearby_changes(scene_changes, time_threshold=3.0)
         scene_changes = scene_detector.skip_intro_outro(scene_changes, metadata.duration)
         
         print(f"   Detected {len(scene_changes)} significant scene changes")
