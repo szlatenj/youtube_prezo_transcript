@@ -1,0 +1,12 @@
+# Sample URLs file for batch processing
+# Add one YouTube URL per line
+# Lines starting with # are comments and will be ignored
+
+# Example presentation videos (replace with actual URLs)
+# https://youtube.com/watch?v=VIDEO_ID_1
+# https://youtube.com/watch?v=VIDEO_ID_2
+# https://youtu.be/VIDEO_ID_3
+
+# Usage:
+# python batch_processor.py sample_urls.txt
+# python batch_processor.py sample_urls.txt --format markdown --output-dir my_presentations 
